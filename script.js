@@ -1,9 +1,9 @@
-// Este script muestra y oculta el menú al hacer clic
-function toggleMenu() {
-    const menu = document.getElementById("menu");
-    if (menu.style.display === "none" || menu.style.display === "") {
-        menu.style.display = "block";
-    } else {
-        menu.style.display = "none";
-    }
-}
+// Animación de carga básica al abrir la página
+document.addEventListener("DOMContentLoaded", () => {
+    console.log("Página cargada correctamente");
+    document.body.style.opacity = 0;
+    setTimeout(() => {
+      document.body.style.transition = "opacity 1s ease";
+      document.body.style.opacity = 1;
+    }, 100);
+  });

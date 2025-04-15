@@ -1,76 +1,100 @@
-<<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <title>Competencias Comunicativas</title>
-    <style>
-        body { font-family: Arial, sans-serif; margin: 0; padding: 0; background-color: #f0f4f8; }
-        header { background-color: #003366; color: white; padding: 20px; text-align: center; }
-        nav { background-color: #005b99; padding: 10px; text-align: center; }
-        nav a { color: white; margin: 0 15px; text-decoration: none; }
-        nav a:hover { text-decoration: underline; }
-        section { padding: 20px; }
-        footer { background-color: #003366; color: white; text-align: center; padding: 10px; margin-top: 20px; }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Competencias Comunicativas</title>
+  <link rel="stylesheet" href="estilo.css" />
 </head>
 <body>
-    <header>
-        <h1>Curso: Competencias Comunicativas</h1>
-    </header>
-
-    <!-- ✅ Botón para mostrar/ocultar -->
-    <button onclick="toggleMenu()">Mostrar/Ocultar Menú</button>
-
-    <!-- ✅ Le agregamos el id="menu" aquí -->
-    <nav id="menu">
-        <a href="#descripcion">Descripción</a>
-        <a href="#actividades">Actividades</a>
-        <a href="#objetivos">Objetivos</a>
+  <header>
+    <h1>Competencias Comunicativas</h1>
+    <nav>
+      <ul>
+        <li><a href="#descripcion">Descripción</a></li>
+        <li><a href="#unidad">Unidad Temática</a></li>
+        <li><a href="#actividades">Actividades</a></li>
+        <li><a href="#objetivos">Objetivos</a></li>
+        <li><a href="#metodo">Método</a></li>
+      </ul>
     </nav>
+  </header>
 
+  <main>
     <section id="descripcion">
-        <h2>Descripción del Curso</h2>
-        <p>Este curso proporciona herramientas para mejorar habilidades comunicativas en entornos profesionales. Incluye teoría, práctica, foros y un proyecto final.</p>
+      <h2>Descripción del Curso</h2>
+      <p>
+        El curso de Competencias Comunicativas tiene como objetivo proporcionar a los estudiantes las herramientas necesarias para mejorar sus habilidades de comunicación en diversos contextos profesionales.
+        A lo largo de este curso, los participantes aprenderán sobre las competencias comunicativas esenciales, su importancia en el desarrollo profesional y cómo aplicarlas en situaciones reales.
+      </p>
+      <img src="img/comunicacion.png" alt="Personas comunicándose" />
+    </section>
+
+    <section id="unidad">
+      <h2>Unidad Temática: Las Competencias Comunicativas y su Importancia</h2>
+      <p>
+        En el mundo profesional actual, ser capaz de comunicarse de manera clara, efectiva y adecuada es crucial. Este curso te proporcionará una comprensión profunda de cómo las competencias comunicativas impactan tu desarrollo profesional y cómo mejorarlas.
+      </p>
+      <img src="img/comunicacion2.png" alt="Importancia de la comunicación" />
     </section>
 
     <section id="actividades">
-        <h2>Actividades Semanales</h2>
-        <ul>
-            <li><strong>Semana 1:</strong> Introducción a las competencias comunicativas.</li>
-            <li><strong>Semana 2:</strong> Comunicación verbal y no verbal.</li>
-            <li><strong>Semana 3:</strong> Escucha activa y empatía.</li>
-            <li><strong>Semana 4:</strong> Comunicación en entornos profesionales.</li>
-            <li><strong>Semana 5:</strong> Proyecto final integrador.</li>
-        </ul>
+      <h2>Actividades del Curso</h2>
+      <ul>
+        <li><strong>Semana 1:</strong> Introducción a las Competencias Comunicativas
+          <ul>
+            <li>Definición de competencias comunicativas.</li>
+            <li>Características y tipos de competencias.</li>
+          </ul>
+        </li>
+        <li><strong>Semana 2:</strong> Comunicación Verbal y No Verbal
+          <ul>
+            <li>Importancia del lenguaje oral y escrito.</li>
+            <li>Comunicación no verbal (gestos, posturas, etc.).</li>
+          </ul>
+        </li>
+        <li><strong>Semana 3:</strong> Escucha Activa y Empatía
+          <ul>
+            <li>Técnicas de escucha activa.</li>
+            <li>Empatía como herramienta efectiva.</li>
+          </ul>
+        </li>
+        <li><strong>Semana 4:</strong> Comunicación Profesional
+          <ul>
+            <li>Adaptación del mensaje.</li>
+            <li>Trabajo en equipo y presentaciones.</li>
+          </ul>
+        </li>
+        <li><strong>Semana 5:</strong> Proyecto Final
+          <ul>
+            <li>Presentación integradora de competencias.</li>
+          </ul>
+        </li>
+      </ul>
     </section>
 
     <section id="objetivos">
-        <h2>Objetivos del Curso</h2>
-        <ul>
-            <li>Comunicar con claridad y eficacia.</li>
-            <li>Escuchar con atención y empatía.</li>
-            <li>Aplicar competencias en el entorno laboral.</li>
-            <li>Crear presentaciones efectivas.</li>
-        </ul>
+      <h2>Objetivos del Curso</h2>
+      <ul>
+        <li>Desarrollar habilidades para una comunicación clara y efectiva.</li>
+        <li>Mejorar la capacidad de escucha activa y empatía.</li>
+        <li>Aplicar competencias en diferentes contextos laborales.</li>
+        <li>Realizar presentaciones y escribir documentos profesionales.</li>
+      </ul>
     </section>
 
-    <footer>
-        <p>© 2025 - Curso de Competencias Comunicativas</p>
-    </footer>
+    <section id="metodo">
+      <h2>Método de Enseñanza</h2>
+      <p>
+        Este curso se desarrollará mediante clases teóricas, actividades prácticas, foros de discusión y un proyecto final. Los estudiantes participarán en dinámicas que les permitirán aplicar lo aprendido y recibir retroalimentación.
+      </p>
+    </section>
+  </main>
 
-    <!-- ✅ Tu archivo JS ya está enlazado -->
-    <script src="script.js"></script>
+  <footer>
+    <p>&copy; 2025 Curso de Competencias Comunicativas</p>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
-Y recuerda, tu archivo script.js debe tener esto:
-javascript
-Copiar
-Editar
-function toggleMenu() {
-    const menu = document.getElementById('menu');
-    if (menu.style.display === 'none') {
-        menu.style.display = 'block';
-    } else {
-        menu.style.display = 'none';
-    }
-}
