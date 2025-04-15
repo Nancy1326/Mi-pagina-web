@@ -1,0 +1,76 @@
+<<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Competencias Comunicativas</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 0; padding: 0; background-color: #f0f4f8; }
+        header { background-color: #003366; color: white; padding: 20px; text-align: center; }
+        nav { background-color: #005b99; padding: 10px; text-align: center; }
+        nav a { color: white; margin: 0 15px; text-decoration: none; }
+        nav a:hover { text-decoration: underline; }
+        section { padding: 20px; }
+        footer { background-color: #003366; color: white; text-align: center; padding: 10px; margin-top: 20px; }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Curso: Competencias Comunicativas</h1>
+    </header>
+
+    <!-- ✅ Botón para mostrar/ocultar -->
+    <button onclick="toggleMenu()">Mostrar/Ocultar Menú</button>
+
+    <!-- ✅ Le agregamos el id="menu" aquí -->
+    <nav id="menu">
+        <a href="#descripcion">Descripción</a>
+        <a href="#actividades">Actividades</a>
+        <a href="#objetivos">Objetivos</a>
+    </nav>
+
+    <section id="descripcion">
+        <h2>Descripción del Curso</h2>
+        <p>Este curso proporciona herramientas para mejorar habilidades comunicativas en entornos profesionales. Incluye teoría, práctica, foros y un proyecto final.</p>
+    </section>
+
+    <section id="actividades">
+        <h2>Actividades Semanales</h2>
+        <ul>
+            <li><strong>Semana 1:</strong> Introducción a las competencias comunicativas.</li>
+            <li><strong>Semana 2:</strong> Comunicación verbal y no verbal.</li>
+            <li><strong>Semana 3:</strong> Escucha activa y empatía.</li>
+            <li><strong>Semana 4:</strong> Comunicación en entornos profesionales.</li>
+            <li><strong>Semana 5:</strong> Proyecto final integrador.</li>
+        </ul>
+    </section>
+
+    <section id="objetivos">
+        <h2>Objetivos del Curso</h2>
+        <ul>
+            <li>Comunicar con claridad y eficacia.</li>
+            <li>Escuchar con atención y empatía.</li>
+            <li>Aplicar competencias en el entorno laboral.</li>
+            <li>Crear presentaciones efectivas.</li>
+        </ul>
+    </section>
+
+    <footer>
+        <p>© 2025 - Curso de Competencias Comunicativas</p>
+    </footer>
+
+    <!-- ✅ Tu archivo JS ya está enlazado -->
+    <script src="script.js"></script>
+</body>
+</html>
+Y recuerda, tu archivo script.js debe tener esto:
+javascript
+Copiar
+Editar
+function toggleMenu() {
+    const menu = document.getElementById('menu');
+    if (menu.style.display === 'none') {
+        menu.style.display = 'block';
+    } else {
+        menu.style.display = 'none';
+    }
+}
